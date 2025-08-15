@@ -1,7 +1,26 @@
-function updateProfileData(fetch){
+function updateProfileData(data){
     const photo = document.getElementById("profile.photo")
-    photo.src = fetch.photo
-    photo.alt = fetch.name
+    const name = document.getElementById("profile.name")
+    const job = document.getElementById("profile.job")
+    const location = document.getElementById("profile.location")
+    const phone = document.getElementById("profile.phone")
+    const email = document.getElementById("profile.email")
+    const hardSkills = document.getElementById("hardSkills")
+    const softSkills = document.getElementById("softSkills")
+    const linguas = document.getElementById("linguas")
+
+    photo.src = data.photo
+    photo.alt = data.name
+    name.innerText = data.name.split(" ")[0]
+    job.innerText = data.job
+    location.innerText = data.location
+    phone.innerText = data.phone
+    phone.href = `tel:${data.phone}`
+    email.innerText = data.email
+    email.href = `mailto:${data.email}`
+    hardSkills.innerHTML = data.skills.hardSkills.map((skills) => `<li><img src="${skills.logo}" alt="${skills.name}"></li>`).join('')
+    softSkills.innerHTML = data.skills.softSkills.map((skills) => `<li>${skills}</li>`).join('')
+    linguas.innerHTML = data.languages.map((linguagem) => `<li>${linguagem}</li>`).join('')
 }
 
 (async () => {

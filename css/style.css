@@ -151,9 +151,9 @@ header h1 {
     color: white;
 }
 
-.conteudo svg {
-    height: 60px;
-    width: 60px;
+.conteudo img {
+    height: 50px;
+    width: 50px;
 }
 
 .conteudo article {
