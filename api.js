@@ -20,7 +20,8 @@ function updateProfileData(data){
     email.href = `mailto:${data.email}`
     hardSkills.innerHTML = data.skills.hardSkills.map((skills) => `<li><img src="${skills.logo}" alt="${skills.name}"></li>`).join('')
     softSkills.innerHTML = data.skills.softSkills.map((skills) => `<li>${skills}</li>`).join('')
-    linguas.innerHTML = data.languages.map((linguagem) => `<li>${linguagem}</li>`).join('')
+    linguas.innerHTML = data.languages.map((linguagem) => `<li>${linguagem.name} - ${linguagem.nivel}</li>`).join('')
+    console.log(linguas)
 }
 
 (async () => {
