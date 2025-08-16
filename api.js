@@ -8,6 +8,7 @@ function updateProfileData(data){
     const hardSkills = document.getElementById("hardSkills")
     const softSkills = document.getElementById("softSkills")
     const linguas = document.getElementById("linguas")
+    const portfolio = document.getElementById("portfolio")
 
     photo.src = data.photo
     photo.alt = data.name
@@ -21,7 +22,7 @@ function updateProfileData(data){
     hardSkills.innerHTML = data.skills.hardSkills.map((skills) => `<li><img src="${skills.logo}" alt="${skills.name}"></li>`).join('')
     softSkills.innerHTML = data.skills.softSkills.map((skills) => `<li>${skills}</li>`).join('')
     linguas.innerHTML = data.languages.map((linguagem) => `<li>${linguagem.name} - ${linguagem.nivel}</li>`).join('')
-    console.log(linguas)
+    portfolio.innerHTML = data.portfolio.map((projeto) => `<li><h3>${projeto.name}</h3><a href="${projeto.url}">${projeto.url}}</a></li>`)
 }
 
 (async () => {
