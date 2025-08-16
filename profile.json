@@ -8,8 +8,8 @@
   "skills": {
     "hardSkills": [
       {
-        "name": "Nodejs",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+        "name": "JavaScript",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
       },
       {
         "name": "Java",
@@ -33,10 +33,9 @@
       }
     ],
     "softSkills": [
-      "Empatia",
-      "Liderança",
+      "Comunicação",
       "Trabalho em equipe",
-      "Flexibilidade",
+      "Resiliência",
       "Organização"
     ]
   },
@@ -61,7 +60,7 @@
   "portfolio": [
     {
       "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+      "url": "https://github.com/marcosvlsdev/portfolio-dio",
       "github": true
     },
     {
