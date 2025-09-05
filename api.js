@@ -19,7 +19,7 @@ function updateProfileData(data){
     phone.href = `tel:${data.phone}`
     email.innerText = data.email
     email.href = `mailto:${data.email}`
-    hardSkills.innerHTML = data.skills.hardSkills.map((skill) => `<li><a href=""><img src="../src/img/file-text.png" id="btn-certificate"></a><img src="${skill.logo}" alt="${skill.name}"></li>`).join('')
+    hardSkills.innerHTML = data.skills.hardSkills.map((skill) => `<li><a href=""><img src="src/img/file-text.png" id="btn-certificate"></a><img src="${skill.logo}" alt="${skill.name}"></li>`).join('')
     softSkills.innerHTML = data.skills.softSkills.map((skills) => `<li>${skills}</li>`).join('')
     linguas.innerHTML = data.languages.map((linguagem) => `<li>${linguagem.name} - ${linguagem.nivel}</li>`).join('')
     portfolio.innerHTML = data.portfolio.map((projeto) => `<li><h3 ${projeto.github ? 'class="github"' : ''}>${projeto.name}</h3><a href="${projeto.url}">${projeto.url}</a></li>`).join('')
