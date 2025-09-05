@@ -11,6 +11,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
+a {
+    color: white;
+}
+
 svg {
     overflow: hidden;
     width: 20px;
@@ -76,7 +80,7 @@ header img {
     justify-self: center;
 }
 
-header h1 {
+header h1, header h1 span {
     font-size: 2rem;
     text-align: center;
     font-weight: 700;
